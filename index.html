@@ -12,7 +12,7 @@
         body>header{
             height: 50px;
             width: 100vw;
-            background-color: #2b124c;
+            background-color: #1f0346;
             /*border:3px solid black;*/
             position: sticky;
             top: 0;
@@ -22,16 +22,50 @@
             z-index: 1000;
         }
         .logo{
-            color: #dfb6b2;
-            font-size: 2rem;
+            color: rgba(221, 196, 255, 0.79);
+            font-size: 20px;
             font-weight: bolder;
         }
         .nav{
-            color: #ffffff;
+            color: rgba(221, 196, 255, 0.79);
             font-size: 18px;
             font-weight: bold;
             padding: 10px;
 
+
+        }
+        .home-section>div{
+            position: relative;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            color: #fcd002;
+            align-content: center;
+
+
+        }
+        .about-header{
+            color: white;
+            position: sticky;
+            top: 0;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            font-weight: bold;
+            font-size: 30px;
+            z-index: 1000;
+
+
+
+        }
+        #about-header{
+            background-color: rgba(31, 3, 70, 0.84);
+        }
+        header>div:nth-child(2)>nav>a:hover{
+            color: #fcd002;
 
         }
         header>div:nth-child(2)>nav>a{
@@ -56,7 +90,7 @@
         }
         button {
             display: block;
-            background-color: #2b124c;
+            background-color: #1f0346;
             font-weight: bold;
             color: #fcd002;
             position: absolute;
@@ -71,19 +105,36 @@
         }
 
         button:hover{
-            color:  #2b124c;
+            color: #1f0346;
             background-color: #fcd002;
 
+        }
+        #hirebtn:hover{
+            color: #fcd002;
+            background-color:#1f0346;
+        }
+        #hirebtn{
+
+            background-color:#fcd002 ;
+            color: #1f0346 ;
+            left: 150px;
+        }
+        #explorebtn{
+            left: 330px ;
         }
         section{
             width: 100vw;
             height: 40vw;
             display: grid;
             border: 2px white;
-            background-color: #2b124c;
+            background-color: #1f0346;
             grid-template-columns: repeat(2,1fr);
             position: relative;
 
+
+        }
+        .hero-section{
+            background-color:  rgba(31, 3, 70, 0.84);
         }
         #name{
             font-size: 50px;
@@ -101,12 +152,25 @@
             padding-left: 80px;
         }
 
+        #img_border1{
+            width: 360px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            background-color:  rgb(56, 6, 110) ;
+
+            position: absolute ;
+            right:30px;
+            top: 10px;
+            margin: 0;
+
+        }
+
         div>#img1{
             position: absolute ;
             right:50px;
             top: 30px;
             margin: 0;
-            border: 2px solid #dfb6b2;
+            /*border: 20px solid #eeeeee;*/
             width: 300px;
             border-radius: 100%;
 
@@ -126,7 +190,7 @@
             text-align: center;
         }
         .projects-caption{
-            color: #ff167b;
+            color: #fcd002;
             text-align: center;
         }
         .projects-header{
@@ -155,7 +219,7 @@
 
         }
         .projects-section>div:hover{
-            background-color: rgba(248, 2, 119, 0.29);
+            background-color: rgb(56, 6, 110);
 
         }
 
@@ -188,7 +252,7 @@
         }
 
         .assignments-section>div:hover{
-            background-color: rgba(248, 2, 119, 0.29);
+            background-color: rgb(56, 6, 110);
 
         }
         .skills-header{
@@ -213,6 +277,15 @@
         }
 
 
+        .skills-section>div{
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+
         .contact-header{
             color: white;
             position: sticky;
@@ -231,7 +304,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: black;
+            background-color: #1f0346;
         }
 
         form {
@@ -251,19 +324,34 @@
             height: 10px;
             width: 100vw;
             align-items: center;
+            position: absolute;
         }
 
+        @keyframes border_rotate {
+            from{
+
+            }
+            to{
+
+            }
+
+        }
+
+        @media mobileView and (max-width:300px ){
+
+        }
     </style>
 </head>
 <body>
 
 <header class="header" id="about">
+
     <div>
-        <span class="logo">SaFer</span>
+        <span class="logo">SakuniFernando</span>
     </div>
     <div>
         <nav class="main-menu">
-            <a href="#about" class="nav">About</a>
+            <a href="#about1" class="nav">About</a>
             <a href="#projects" class="nav">Projects</a>
             <a href="#assignments" class="nav">Assignments</a>
             <a href="#skills" class="nav">Skills</a>
@@ -273,17 +361,33 @@
     <span><button id="menubtn">menu</button></span>
 </header>
 
+<section class="home-section">
+    <div>
+        <h1>HI!! I'M SAKUNI FERNANDO</h1>
+        <H2>Welcome To My Portfolio</H2>
+    </div>
+
+</section>
+
+<header class="header" id="about-header">
+    <span class="about-header" id="about1">About</span>
+</header>
+
 <section class="hero-section">
     <div id="intro1">
         <h1 id="name">Hi! I'm Sakuni </h1>
-        <h2 id="intro">Front-end Devoloper </h2>
-        <p class="para">I'm a creative UI/UX designer with a knack for crafting user-friendly interfaces. With a background in IT and business, I bring a unique perspective to every project I work on.</p>
+        <h2 id="intro">Software Devoloper </h2>
+        <p class="para">I'm a creative  with a knack for crafting user-friendly interfaces. With a background in IT , I bring a unique perspective to every project I work on.</p>
 
-        <button id="explorebtn">download CV</button>
+        <button id="explorebtn">Download CV</button>
+
+        <button id="hirebtn" >Hire me</button>
     </div>
 
-    <div>
-        <img src="assests/images/portfolio%20image.jpeg" id="img1">
+    <div id="img_border1">
+        <div>
+            <img src="assests/images/portfolio%20image.jpeg" id="img1">
+        </div>
     </div>
 
 </section>
@@ -343,10 +447,10 @@
 </header>
 
 <section class="skills-section">
-<div><i class="fa-brands fa-java fa-beat fa-8x" style="color: #ff0a70" ></i></div>
-    <div><i class="fa-brands fa-html5 fa-beat fa-8x" style="color: white"></i></div>
-    <div><i class="fa-brands fa-css fa-beat fa-8x " style="color: #ff0a70"></i></div>
-    <div><i class="fa-solid fa-database fa-beat fa-8x" style="color: white" ></i></div>
+<div><i class="fa-brands fa-java fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)" ></i></div>
+    <div><i class="fa-brands fa-html5 fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)"></i></div>
+    <div><i class="fa-brands fa-css fa-beat fa-5x " style="color: rgba(221, 196, 255, 0.79)"></i></div>
+    <div><i class="fa-solid fa-database fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)" ></i></div>
 </section>
 
 <header class="header">
@@ -370,7 +474,7 @@
             <textarea   placeholder="write..."  rows="8" cols="50"></textarea>
         </div>
 
-        <button type="submit">Submit</button>
+<!--        <button type="submit">Submit</button>-->
 
 
     </form>
