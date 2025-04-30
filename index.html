@@ -40,6 +40,13 @@
             color: rgba(221, 196, 255, 0.79);
             font-size: 20px;
             font-weight: bolder;
+            display: inline;
+        }
+        .logo-icon{
+            color: rgba(221, 196, 255, 0.79);
+            font-size: 20px;
+            font-weight: bolder;
+            display: none;
         }
         .nav{
             color: rgba(221, 196, 255, 0.79);
@@ -427,9 +434,16 @@
         /*}*/
 
         @media all and (max-width:700px ) and (min-width: 400px){
+            .logo{
+                display: none;
+            }
+            .logo-icon{
+                display: inline;
+            }
             .home-section{
                 font-size: 25px;
-                padding: 20px;
+
+
             }
             #hi{
                 font-size: 30px;
@@ -438,7 +452,9 @@
                 font-size: 35px;
             }
             #line3{
-                font-size: 14px;
+                font-size: 15px;
+                padding-left: 20px;
+                padding-right: 20px;
             }
 
         }
@@ -450,7 +466,9 @@
 
     <div>
         <span class="logo">SakuniFernando</span>
+        <span class="logo-icon">Sa|Fer</span>
     </div>
+
     <div>
         <nav class="main-menu">
             <a href="#about1" class="nav">About</a>
