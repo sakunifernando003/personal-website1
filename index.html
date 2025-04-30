@@ -85,7 +85,8 @@
         }
         .lines{
             animation-name: intro;
-            animation-duration: 10s;
+            animation-duration: 5s;
+            animation: intro 5s ease-out forwards; /* Apply animation */
 
         }
 
@@ -390,6 +391,8 @@
         @keyframes intro {
             from{
                 opacity: 0;
+                transform: translatey(70px);
+
 
             }
             to{
