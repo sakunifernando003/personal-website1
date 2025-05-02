@@ -128,7 +128,17 @@
         }
         #about-header{
             background-color: #1f0346;
+            display: flex; /* Use Flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center;
         }
+
+        #service-header{
+            display: flex; /* Use Flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center;
+        }
+
         header>div:nth-child(2)>nav>a:hover{
             color: #eeee;
 
@@ -575,7 +585,7 @@
 
 </section>
 
-<header class="header">
+<header class="header" id="service-header">
     <span class="projects-header" id="projects">Services</span>
 </header>
 
