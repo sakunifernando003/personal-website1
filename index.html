@@ -220,6 +220,7 @@
             align-content: center;
             text-align: left;
             padding-left: 80px;
+            animation: fade 3s ease-in infinite;
         }
 
         /*#img_border1{*/
@@ -441,6 +442,17 @@
 
         }
 
+        @keyframes fade {
+            0%, 100% {
+                opacity: 0; /* Text fades out */
+                transform: translateX(40px); /* Slide down */
+            }
+            50% {
+                opacity: 1; /* Text fully visible */
+                transform: translateX(0); /* Normal position */
+            }
+        }
+
         /*@keyframes typewriter {*/
         /*    from{*/
         /*        opacity: 0;*/
@@ -645,6 +657,20 @@
 <footer>
     <h6>All Right Reserved @SaFer / copyright@SaFer</h6>
 </footer>
+<script>
+    const roles = ["Software Developer", "Frontend Developer", "UI/UX Engineer"];
+    let index = 0;
+
+    function changeRole() {
+        const dynamicRole = document.getElementById("intro");
+        dynamicRole.textContent = roles[index];
+        index = (index + 1) % roles.length; // Loop back to the first role
+    }
+
+    // Change the role every 3 seconds
+    setInterval(changeRole, 3000);
+
+</script>
 
 <script src="lib/fontawesome-free-6.7.2-web/js/all.js"></script>
 </body>
