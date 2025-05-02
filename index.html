@@ -90,7 +90,7 @@
         .lines{
             animation-name: intro;
             animation-duration: 3s;
-            animation: intro 3s ease-out forwards infinite; /* Apply animation */
+            animation: intro 3s ease-out forwards infinite;
 
         }
 
@@ -312,15 +312,19 @@
         .projects-section{
             border: 8px;
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(3,1fr);
             position: relative;
 
         }
         .projects-section>div{
             margin: 10px;
-            height:350px ;
+            height:250px ;
+            width: 350px;
             border: 1px solid #fcd002 ;
             border-radius: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            justify-items: center;
 
         }
 
@@ -593,6 +597,16 @@
         <p class="projects-para">Helping you establish a unique identity with custom logos and branding strategies that reflect your vision and values.</p>
     </div>
 
+    <div class="service-card">
+        <h2 class="projects-caption">Branding & Logo Design</h2>
+        <p class="projects-para">Helping you establish a unique identity with custom logos and branding strategies that reflect your vision and values.</p>
+    </div>
+
+    <div class="service-card">
+        <h2 class="projects-caption">Branding & Logo Design</h2>
+        <p class="projects-para">Helping you establish a unique identity with custom logos and branding strategies that reflect your vision and values.</p>
+    </div>
+
 </section>
 
 <header class="header">
@@ -662,7 +676,7 @@
     <h6>All Right Reserved @SaFer / copyright@SaFer</h6>
 </footer>
 <script>
-    const roles = ["Software Developer", "Frontend Developer", "UI/UX Engineer"];
+    const roles = ["Software Developer", "Front-end Developer", "UI/UX Designer"];
     let index = 0;
 
     function changeRole() {
