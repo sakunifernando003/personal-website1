@@ -139,6 +139,23 @@
             align-items: center;
         }
 
+        #skills-header{
+            display: flex; /* Use Flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center;
+        }
+        #works-header{
+            display: flex; /* Use Flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center;
+        }
+        #contact-header{
+            display: flex; /* Use Flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center;
+        }
+
+
         header>div:nth-child(2)>nav>a:hover{
             color: #eeee;
 
@@ -323,10 +340,11 @@
         .projects-section{
             border: 8px;
             display: grid;
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(3,1fr) ;
             position: relative;
 
         }
+
         .projects-section>div{
             margin: 10px;
             height:250px ;
@@ -618,15 +636,15 @@
         <p class="projects-para">I develop engaging, feature-rich mobile applications for Android and iOS platforms, ensuring a smooth and interactive user experience.</p>
     </div>
 
-    <div class="service-card">
-        <div><i class="fa-brands fa-searchengin fa-bounce fa-2xl" style="color: #FFD43B;"></i></div>
-        <h2 class="projects-caption">SEO Optimization</h2>
-        <p class="projects-para">Enhancing your online visibility with on-page and off-page SEO strategies. I help your website rank higher and attract the right audienceom logos and branding strategies that reflect your vision and values.</p>
-    </div>
+<!--    <div class="service-card">-->
+<!--        <div><i class="fa-brands fa-searchengin fa-bounce fa-2xl" style="color: #FFD43B;"></i></div>-->
+<!--        <h2 class="projects-caption">SEO Optimization</h2>-->
+<!--        <p class="projects-para">Enhancing your online visibility with on-page and off-page SEO strategies. I help your website rank higher and attract the right audienceom logos and branding strategies that reflect your vision and values.</p>-->
+<!--    </div>-->
 
 </section>
 
-<header class="header">
+<header class="header" id="works-header">
     <span class="assignments-header" id="assignments">Works</span>
 </header>
 <section class="assignments-section">
@@ -651,7 +669,7 @@
     </div>
 </section>
 
-<header class="header">
+<header class="header" id="skills-header">
     <span class="skills-header" id="skills">Skills</span>
 </header>
 
@@ -662,7 +680,7 @@
     <div><i class="fa-solid fa-database fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)" ></i></div>
 </section>
 
-<header class="header">
+<header class="header" id="contact-header">
     <span class="contact-header" id="contacts">Contacts</span>
 </header>
 
