@@ -59,6 +59,7 @@
             /*bottom: 0;*/
             /*top: 0;*/
             /*margin: auto;*/
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
             font-size: 50px;
             color: #fcd002;
             font-family: "Cal Sans", sans-serif;
@@ -77,9 +78,11 @@
             animation-duration: 3s;
             animation: intro 3s ease-out forwards infinite;
 
+
         }
 
         #hi{
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 
 
         }
@@ -151,6 +154,9 @@
         header>div:nth-child(2)>nav>a{
             text-decoration: none;
 
+        }
+        #hamburger-icon{
+            display: none;
         }
 
         .main-menu{
@@ -338,11 +344,12 @@
             margin: 10px;
             height:250px ;
             width: 350px;
-            border: 1px solid #fcd002 ;
+            /*border: 1px solid #fcd002 ;*/
             border-radius: 20px;
             padding-left: 10px;
             padding-right: 10px;
             justify-items: center;
+            background-color: rgb(56, 6, 110);
 
         }
 
@@ -532,6 +539,12 @@
                 display: block;
                 font-size: 30px;
             }
+            #menu-bar{
+                display: none;
+            }
+            #hamburger-icon{
+                display: block;
+            }
 
             #hi{
                 font-size: 50px;
@@ -542,6 +555,7 @@
             #line3{
                display: none;
             }
+
 
 
         }
@@ -556,7 +570,7 @@
         <span class="logo-icon">Sa|Fer</span>
     </div>
 
-    <div class="main-header-top">
+    <div id="menu-bar" class="main-header-top">
         <nav class="main-menu">
             <a href="#about1" class="nav">About</a>
             <a href="#projects" class="nav">Services</a>
@@ -564,8 +578,10 @@
             <a href="#skills" class="nav">Skills</a>
             <a href="#contacts" class="nav">Contact</a>
         </nav>
+        <div id="hamburger-icon"><i class="fa-solid fa-bars"></i></div>
+
     </div>
-    <span><button id="menubtn">menu</button></span>
+    
 </header>
 
 <section class="home-section">
@@ -574,6 +590,7 @@
         <p id="line2" class="lines">I'm Sakuni Fernando</p>
         <p id="line3" class="lines">Aspiring Software Engineer | UI/UX Enthusiast | Lifelong Learner</p>
     <p id="line4-responsive" class="lines">Aspiring Software Engineer <br> UI/UX Enthusiast <br> Lifelong Learner</p>
+
 
 </section>
 
@@ -644,11 +661,11 @@
         <p class="projects-para">I develop engaging, feature-rich mobile applications for Android and iOS platforms, ensuring a smooth and interactive user experience.</p>
     </div>
 
-<!--    <div class="service-card">-->
-<!--        <div><i class="fa-brands fa-searchengin fa-bounce fa-2xl" style="color: #FFD43B;"></i></div>-->
-<!--        <h2 class="projects-caption">SEO Optimization</h2>-->
-<!--        <p class="projects-para">Enhancing your online visibility with on-page and off-page SEO strategies. I help your website rank higher and attract the right audienceom logos and branding strategies that reflect your vision and values.</p>-->
-<!--    </div>-->
+    <div class="service-card">
+        <div><i class="fa-brands fa-searchengin fa-bounce fa-2xl" style="color: #FFD43B;"></i></div>
+        <h2 class="projects-caption">SEO Optimization</h2>
+        <p class="projects-para">Enhancing your online visibility with on-page and off-page SEO strategies. I help your website rank higher and attract the right audienceom logos and branding strategies that reflect your vision and values.</p>
+    </div>
 
 </section>
 
