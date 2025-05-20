@@ -356,16 +356,26 @@
             padding-top: 50px;
             justify-items: center;
         }
-        .assignments-section>div{
+        .assignments-section > div {
             margin: 10px;
-            height:400px ;
+            height: 400px;
             width: 300px;
             border-radius: 20px;
             padding-left: 10px;
             padding-right: 10px;
             justify-items: center;
             background-color: rgb(56, 6, 110);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        .assignments-section > div:hover {
+            transform: scale(1.1); /* Scales up the div */
+            box-shadow: 0 0 15px rgba(138, 43, 226, 0.8), /* Bright purple glow */
+            0 0 30px rgba(138, 43, 226, 0.6),
+            0 0 45px rgba(138, 43, 226, 0.4),
+            0 0 60px rgba(138, 43, 226, 0.2);
+        }
+
 
         .assignments-section>div>div{
             height: 200px;
