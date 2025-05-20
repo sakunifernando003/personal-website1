@@ -222,6 +222,11 @@
 
 
         }
+
+        .spacing-section{
+            height: 100px;
+        }
+
         .hero-section{
             background-color:  #1f0346;
         }
@@ -351,6 +356,7 @@
             justify-items: center;
             background-color: rgb(56, 6, 110);
 
+
         }
 
         .projects-section>div:hover{
@@ -379,8 +385,22 @@
             position: relative;
         }
         .assignments-section>div{
-            margin: 5px;
-            background-color:  rgb(56, 6, 110);
+            margin: 10px;
+            height:400px ;
+            width: 300px;
+            border-radius: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            justify-items: center;
+            background-color: rgb(56, 6, 110);
+        }
+
+        .assignments-section>div>div{
+            height: 200px;
+            width: 315px;
+            border-radius: 20px;
+            background-color: #eeeeee;
+            opacity: 60%;
         }
         .assignmentspara{
             color: whitesmoke;
@@ -407,8 +427,18 @@
         .skills-section{
             border: 8px;
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(1,4fr);
             position: relative;
+        }
+
+        .skill-title{
+            color: #fcd002;
+            text-align: center;
+            font-family: "Roboto Condensed", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-size: 25px;
+            font-style: normal;
         }
 
 
@@ -420,6 +450,13 @@
             margin: auto;
         }
 
+        .skills-section>div>div{
+            height: 70px;
+            width: 800px;
+            background-color: #eeeeee;
+            opacity: 50%;
+            border-radius: 50px;
+        }
 
         .contact-header{
             color: white;
@@ -476,6 +513,12 @@
             background-color: rgb(56, 6, 110);
             width: 100vw;
             height: 40vh;
+            color: #eeeeee;
+        }
+
+        #footer-text{
+            text-align: center;
+
         }
 
         @keyframes intro {
@@ -670,29 +713,24 @@
 
 </section>
 
+<section class="spacing-section"></section>
+
 <header class="header" id="works-header">
     <span class="assignments-header" id="assignments">My Works</span>
 </header>
 <section class="assignments-section">
     <div>
-        <h2 class="projects-caption">Assignment 1</h2>
+        <div></div>
+        <h2 class="projects-caption">Projects</h2>
         <p  class="assignmentspara"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae, corporis dignissimos eaque earum expedita, laboriosam maxime minus numquam, optio quae sapiente vitae. Cumque fugit incidunt magni minima quidem.</p>
     </div>
 
     <div>
-        <h2 class="projects-caption">Assignment 2</h2>
+        <div></div>
+        <h2 class="projects-caption">Assignments</h2>
         <p class="assignmentspara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur debitis ducimus, enim eos excepturi facilis itaque iure labore nemo nesciunt nobis nostrum, pariatur provident quaerat, sed sequi soluta sunt!</p>
     </div>
 
-    <div>
-        <h2 class="projects-caption">Assignment 3</h2>
-        <p class="assignmentspara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum dolore dolorem doloribus, enim excepturi ipsam laudantium natus numquam quaerat suscipit veritatis. Dolor eligendi incidunt ipsum nam nemo odit perspiciatis!</p>
-
-    </div>
-    <div>
-        <h2 class="projects-caption">Assignment 4</h2>
-        <p class="assignmentspara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet atque dolores ea explicabo illum ipsum laudantium libero mollitia nam non officia, officiis praesentium ratione sapiente sed, tempore ullam voluptatem!</p>
-    </div>
 </section>
 
 <header class="header" id="skills-header">
@@ -700,11 +738,29 @@
 </header>
 
 <section class="skills-section">
-    <div><i class="fa-brands fa-java fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)" ></i></div>
-    <div><i class="fa-brands fa-html5 fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)"></i></div>
-    <div><i class="fa-brands fa-css fa-beat fa-5x " style="color: rgba(221, 196, 255, 0.79)"></i></div>
-    <div><i class="fa-solid fa-database fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)" ></i></div>
+    <div>
+        <p class="skill-title">Technical Skills</p>
+        <div>
+<!--            <div><i class="fa-brands fa-java fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)" ></i></div>-->
+<!--            <div><i class="fa-brands fa-html5 fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)"></i></div>-->
+<!--            <div><i class="fa-brands fa-css fa-beat fa-5x " style="color: rgba(221, 196, 255, 0.79)"></i></div>-->
+<!--            <div><i class="fa-solid fa-database fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)" ></i></div>-->
+        </div>
+    </div>
+
+    <div>
+        <p class="skill-title">Soft Skills</p>
+        <div></div>
+    </div>
+
+    <div>
+        <p class="skill-title">Other</p>
+        <div></div>
+    </div>
+
 </section>
+
+<section class="spacing-section"></section>
 
 <header class="header" id="contact-header">
     <span class="contact-header" id="contacts">Contact Me</span>
@@ -734,7 +790,7 @@
 </section>
 
 <section id="footer">
-    <h3>All Right Reserved @SaFer / copyright@SaFer</h3>
+    <p id="footer-text">All Right Reserved @SaFer / copyright@SaFer</p>
 
 </section>
 <script>
