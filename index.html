@@ -309,17 +309,22 @@
             padding-top: 20px;
         }
 
-        .projects-section>div{
+        .projects-section > div {
             margin: 20px;
-            height:250px ;
+            height: 250px;
             width: 300px;
             border-radius: 20px;
             padding: 10px;
             justify-items: center;
             background-color: rgb(56, 6, 110);
-
-
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        .projects-section > div:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
 
         .projects-section>div:hover{
             background-color: rgb(56, 6, 110);
