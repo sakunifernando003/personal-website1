@@ -246,19 +246,30 @@
 
             background: #fcd002;
         }
-
-        div>#img1{
-            position: absolute ;
-            right:50px;
+        #img_border1 {
+            position: absolute;
+            right: 50px;
             top: 30px;
-            margin: 0;
-            border: 20px solid rgb(56, 6, 110);
             width: 300px;
+            height: 300px;
+            border: 20px solid transparent;
             border-radius: 100%;
-
-
-
+            animation: rotate-border 3s linear infinite;
+            box-shadow: 0 0 15px rgba(31, 3, 70, 0.8),
+            0 0 30px rgba(106, 17, 203, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+
+        #img1 {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            border: 0;
+            transform: rotate(0deg);
+        }
+
         .para{
             font-size: 18px;
             color: #ffffff;
@@ -525,6 +536,10 @@
         #avatar-img{
             width: 300px;
             height: 400px;
+            justify-items: center;
+        }
+        #contact-icon{
+           justify-items: center;
         }
 
         #footer{
@@ -554,6 +569,22 @@
             }
 
         }
+
+        @keyframes rotate-border {
+            0% {
+                transform: rotate(0deg);
+                border-color: transparent transparent #6a11cb #1f0346;
+            }
+            50% {
+                transform: rotate(0deg);
+                border-color: #6a11cb #1f0346 transparent transparent;
+            }
+            100% {
+                transform: rotate(0deg);
+                border-color: transparent transparent #6a11cb #1f0346;
+            }
+        }
+
 
         @keyframes fade {
             0%, 100% {
@@ -672,11 +703,10 @@
         <button onclick="location.href='#contacts'" id="hirebtn" >Hire me</button>
     </div>
 
-    <div id="img_border1">
-        <div>
+    <div>
+        <div id="img_border1">
             <img src="assests/images/portfolio%20image.jpeg" id="img1">
         </div>
-
 
         <div class="icon-bar">
             <div class="social-icons"><i class="fa-brands fa-github fa-2xl" style="color: #eeeeee;"></i></div>
@@ -735,7 +765,7 @@
 <section class="assignments-section">
     <div>
         <div>
-            <img src="assests/images/Ai-assignment-writing.webp" class="assigment-img">
+            <img src="assests/images/projects.avif" class="assigment-img">
         </div>
         <a class="projects-caption" href="#">Projects</a>
         <p  class="assignmentspara"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur beatae, corporis dignissimos eaque earum expedita, laboriosam maxime minus numquam, optio quae sapiente vitae. Cumque fugit incidunt magni minima quidem.</p>
@@ -804,17 +834,20 @@
     </form>
     </div>
 
-    <div>
-        <img src="assests/images/avatar.png" id="avatar-img">
+    <div id="img_border2">
+        <div>
+            <img src="assests/images/avatar-removebg-preview.png" id="avatar-img">
+        </div>
+
     </div>
 </section>
 
 <section id="extra-section">
 <div id="footer">
     <p id="footer-text">All Right Reserved @SaFer/copyright@SaFer2025</p>
-
 </div>
 </section>
+
 <script>
     const roles = ["Software Developer", "Front-end Developer", "UI/UX Designer"];
     let index = 0;
