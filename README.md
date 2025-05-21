@@ -8,6 +8,7 @@
 
 [Mockup Link (https://www.figma.com/design/lTwOVX7GDFYvO7Ihl6rYp9/Untitled?node-id=7-31&t=ttIPcaBoxF6z0ILX-1)]
 
+<<<<<<< HEAD
 Assignment 02 - [ https://github.com/sakunifernando003/personal-website1 ]
 
 Assignment 03 - [ https://github.com/sakunifernando003/ITS-1119-Asiignment03 ]
@@ -27,3 +28,7 @@ Assignment 09
 Assignment 10 - [ ]
 
 Assignment 11 - [ https://github.com/sakunifernando003/ITS-1119-Asiignment_11 ]
+=======
+
+
+>>>>>>> 13a40bb6eae83900d1bee26b8fb536b3b4e6f711
