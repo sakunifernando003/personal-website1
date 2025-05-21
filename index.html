@@ -547,13 +547,10 @@
         form {
             padding-top: 90px;
             border-radius: 10px;
-            /*border: 2px solid #fcd002 ;*/
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             font-family: "Roboto Condensed", sans-serif;
             font-optical-sizing: auto;
             font-style: normal;
-
-
         }
 
         .lbl{
@@ -598,6 +595,44 @@
 
 
 
+        }
+
+        .skills-section > div {
+            position: absolute;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideIn 12s ease-in-out infinite;
+        }
+
+        #technical-div {
+            animation-delay: 0s;
+        }
+
+        #soft-div {
+            animation-delay: 4s;
+        }
+
+        #other-div {
+            animation-delay: 8s;
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            10%, 30% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            40% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
         }
 
         @keyframes intro {
@@ -821,7 +856,7 @@
 </header>
 
 <section class="skills-section">
-    <div>
+    <div id="technical-div">
         <p class="skill-title">Technical Skills</p>
 
         <div class="icon-skill">
@@ -830,7 +865,7 @@
             <div><i class="fa-brands fa-python fa-3x" style="color: #e0e1ed;"></i></div>
         </div>
         <div  class="icon-skill">
-            <div><p class="skill-text">Web Development :</p></div>
+            <div><p class="skill-text">Web Development:</p></div>
             <div><i class="fa-brands fa-js fa-3x" style="color: #e0e1ed;"></i></div>
             <div><i class="fa-brands fa-html5 fa-3x" style="color: #e0e1ed;"></i></div>
             <div><i class="fa-brands fa-css fa-3x" style="color:  #e0e1ed;"></i></div>
@@ -844,7 +879,7 @@
         </div>
     </div>
 
-    <div>
+    <div id="soft-div">
         <p class="skill-title">Soft Skills</p>
        <div class="skill-text_div"> <p class="skill-text">Communication (Verbal and Written)</p></div>
         <div  class="skill-text_div"><p class="skill-text">Teamwork and Collaboration</p></div>
@@ -852,7 +887,7 @@
         <div  class="skill-text_div"><p class="skill-text">Creativity and Innovation</p></div>
     </div>
 
-    <div>
+    <div id="other-div">
         <p class="skill-title">Other</p>
         <div  class="icon-skill">
             <div><i class="fa-solid fa-database fa-3x" style="color: #B197FC;"></i></div>
