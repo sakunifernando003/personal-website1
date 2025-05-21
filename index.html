@@ -185,15 +185,20 @@
             transform: translate(-50%, -50%);
             top: 320px;
             left: 150px;
+            transition: box-shadow 0.3s ease, transform 0.2s ease;
 
         }
 
-        button:hover{
+        button:hover {
             color: #1f0346;
-            background-color: #fcd002;
-
+            background-color: #d1a800;
+            cursor: pointer;
         }
 
+        button:active {
+            box-shadow: 0 0 15px 5px rgba(252, 208, 2, 0.8), 0 0 30px 10px rgba(252, 208, 2, 0.5);
+
+        }
         #explorebtn{
             left: 330px ;
             top: 320px;
@@ -201,6 +206,8 @@
             background-color: #fcd002;
 
         }
+
+
         section{
             width: 100vw;
             height: 100vh;
@@ -339,8 +346,8 @@
         }
 
         .projects-section > div:hover {
-            transform: scale(1.1); /* Scales up the div */
-            box-shadow: 0 0 15px rgba(138, 43, 226, 0.8), /* Bright purple glow */
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(138, 43, 226, 0.8),
             0 0 30px rgba(138, 43, 226, 0.6),
             0 0 45px rgba(138, 43, 226, 0.4),
             0 0 60px rgba(138, 43, 226, 0.2);
