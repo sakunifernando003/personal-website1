@@ -457,6 +457,8 @@
             top: 0;
             bottom: 0;
             margin: auto;
+            align-items: center;
+            padding-left: 120px;
 
         }
         .icon-skill{
@@ -472,15 +474,19 @@
             background-color: #1f0346; /* A matching purple background */
             box-shadow: 0 0 10px rgba(128, 0, 255, 0.5); /* Soft initial glow */
             transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for hover effects */
+
+        }
+        .img-skill{
+            width: 60px;
+            height: 60px;
         }
 
-        /* Hover effect */
         .skills-section > div > div:hover {
-            transform: scale(1.1); /* Magnify the element */
-            box-shadow: 0 0 20px rgba(128, 0, 255, 0.8), /* Stronger glow effect */
-            0 0 40px rgba(128, 0, 255, 0.6),
-            0 0 60px rgba(128, 0, 255, 0.4);
-            border-color: rgba(128, 0, 255, 0.5); /* Adds a glowing purple border */
+            transform: scale(1.1);
+            /*box-shadow: 0 0 20px rgba(128, 0, 255, 0.8), */
+            /*0 0 40px rgba(128, 0, 255, 0.6),*/
+            /*0 0 60px rgba(128, 0, 255, 0.4);*/
+            border-color: rgba(128, 0, 255, 0.5);
         }
 
         .skill-text_div{
@@ -547,10 +553,13 @@
         form {
             padding-top: 90px;
             border-radius: 10px;
+            /*border: 2px solid #fcd002 ;*/
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             font-family: "Roboto Condensed", sans-serif;
             font-optical-sizing: auto;
             font-style: normal;
+
+
         }
 
         .lbl{
@@ -595,44 +604,6 @@
 
 
 
-        }
-
-        .skills-section > div {
-            position: absolute;
-            opacity: 0;
-            transform: translateY(50px);
-            animation: slideIn 12s ease-in-out infinite;
-        }
-
-        #technical-div {
-            animation-delay: 0s;
-        }
-
-        #soft-div {
-            animation-delay: 4s;
-        }
-
-        #other-div {
-            animation-delay: 8s;
-        }
-
-        @keyframes slideIn {
-            0% {
-                opacity: 0;
-                transform: translateX(50px);
-            }
-            10%, 30% {
-                opacity: 1;
-                transform: translateX(0);
-            }
-            40% {
-                opacity: 0;
-                transform: translateX(-50px);
-            }
-            100% {
-                opacity: 0;
-                transform: translateX(50px);
-            }
         }
 
         @keyframes intro {
@@ -866,17 +837,24 @@
         </div>
         <div  class="icon-skill">
             <div><p class="skill-text">Web Development:</p></div>
-            <div><i class="fa-brands fa-js fa-3x" style="color: #e0e1ed;"></i></div>
-            <div><i class="fa-brands fa-html5 fa-3x" style="color: #e0e1ed;"></i></div>
-            <div><i class="fa-brands fa-css fa-3x" style="color:  #e0e1ed;"></i></div>
-            <div><i class="fa-brands fa-bootstrap fa-3x" style="color: #e0e1ed;"></i></div>
-
+            <div><i class="fa-brands fa-js fa-3x" style="color: #B197FC;"></i></div>
+            <div><i class="fa-brands fa-html5 fa-3x" style="color: #B197FC;"></i></div>
+            <div><i class="fa-brands fa-css fa-3x" style="color:  #B197FC;"></i></div>
+            <div><i class="fa-brands fa-bootstrap fa-3x" style="color: #B197FC;"></i></div>
 
         </div>
         <div class="icon-skill">
             <p class="skill-text">Design Tools :</p>
             <div><i class="fa-brands fa-figma fa-3x" style="color:#e0e1ed;"></i></div>
         </div>
+
+        <div class="icon-skill">
+            <p class="skill-text">other :</p>
+            <div><i class="fa-solid fa-database fa-3x" style="color: #B197FC;"></i></div>
+            <img src="assests/images/vs-removebg-preview.png" class="img-skill">
+        </div>
+
+
     </div>
 
     <div id="soft-div">
@@ -887,12 +865,12 @@
         <div  class="skill-text_div"><p class="skill-text">Creativity and Innovation</p></div>
     </div>
 
-    <div id="other-div">
-        <p class="skill-title">Other</p>
-        <div  class="icon-skill">
-            <div><i class="fa-solid fa-database fa-3x" style="color: #B197FC;"></i></div>
-        </div>
-    </div>
+<!--    <div id="other-div">-->
+<!--        <p class="skill-title">Other</p>-->
+<!--        <div  class="icon-skill">-->
+<!--            <div><i class="fa-solid fa-database fa-3x" style="color: #B197FC;"></i></div>-->
+<!--        </div>-->
+<!--    </div>-->
 
 </section>
 
