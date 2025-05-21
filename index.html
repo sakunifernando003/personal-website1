@@ -435,7 +435,7 @@
         .skills-section{
             border: 8px;
             display: grid;
-            grid-template-columns: repeat(1,4fr);
+            grid-template-columns: repeat(3,1fr);
             position: relative;
             background: linear-gradient(135deg, #1f0346, #6a11cb);
 
@@ -457,14 +457,22 @@
             top: 0;
             bottom: 0;
             margin: auto;
+
         }
 
         .skills-section>div>div{
-            height: 70px;
-            width: 800px;
-            background-color: #eeeeee;
-            opacity: 50%;
-            border-radius: 50px;
+            height: 100px;
+            width: 400px;
+            margin: 10px;
+            background-color:rgb(56, 6, 110);
+
+        }
+        .skill-text{
+            font-family: "Roboto Condensed", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-size: 18px;
+            color: #eeeeee;
         }
 
         .contact-header{
@@ -779,22 +787,45 @@
 <section class="skills-section">
     <div>
         <p class="skill-title">Technical Skills</p>
+<!--        <div>-->
+<!--&lt;!&ndash;            <div><i class="fa-brands fa-java fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)" ></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div><i class="fa-brands fa-html5 fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div><i class="fa-brands fa-css fa-beat fa-5x " style="color: rgba(221, 196, 255, 0.79)"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div><i class="fa-solid fa-database fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)" ></i></div>&ndash;&gt;-->
+<!--        </div>-->
+        <div >
+            <p class="skill-text">Programming Languages</p>
+            <i class="fa-brands fa-java fa-3x" style="color: #e0e1ed;"></i>
+            <i class="fa-brands fa-python fa-3x" style="color: #e0e1ed;"></i>
+        </div>
         <div>
-<!--            <div><i class="fa-brands fa-java fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)" ></i></div>-->
-<!--            <div><i class="fa-brands fa-html5 fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)"></i></div>-->
-<!--            <div><i class="fa-brands fa-css fa-beat fa-5x " style="color: rgba(221, 196, 255, 0.79)"></i></div>-->
-<!--            <div><i class="fa-solid fa-database fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)" ></i></div>-->
+            <p class="skill-text">Web Development</p>
+            <i class="fa-brands fa-js fa-3x" style="color: #e0e1ed;"></i>
+            <i class="fa-brands fa-html5 fa-3x" style="color: #e0e1ed;"></i>
+            <i class="fa-brands fa-css fa-3x" style="color:  #e0e1ed;"></i>
+            <i class="fa-brands fa-bootstrap fa-3x" style="color: #e0e1ed;"></i>
+
+
+        </div>
+        <div>
+            <p class="skill-text">Design Tools</p>
+            <i class="fa-brands fa-figma fa-3x" style="color:#e0e1ed;"></i>
         </div>
     </div>
 
     <div>
         <p class="skill-title">Soft Skills</p>
-        <div></div>
+        <p class="skill-text">Communication (Verbal and Written)</p>
+        <p class="skill-text">Teamwork and Collaboration</p>
+        <p class="skill-text">Problem-Solving</p>
+        <p class="skill-text">Creativity and Innovation</p>
     </div>
 
     <div>
         <p class="skill-title">Other</p>
-        <div></div>
+        <div>
+            <i class="fa-solid fa-database fa-3x" style="color: #B197FC;"></i>
+        </div>
     </div>
 
 </section>
