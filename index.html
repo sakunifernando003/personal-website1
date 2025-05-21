@@ -470,6 +470,21 @@
             background-color:rgb(56, 6, 110);
 
         }
+        .icon-skill {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: start;
+        }
+
+        .icon-skill div {
+            display: flex;
+            align-items: center;
+        }
+
+        .skill-section div {
+            margin-bottom: 20px;
+        }
         .skill-text{
             font-family: "Roboto Condensed", sans-serif;
             font-optical-sizing: auto;
@@ -790,29 +805,24 @@
 <section class="skills-section">
     <div>
         <p class="skill-title">Technical Skills</p>
-<!--        <div>-->
-<!--&lt;!&ndash;            <div><i class="fa-brands fa-java fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)" ></i></div>&ndash;&gt;-->
-<!--&lt;!&ndash;            <div><i class="fa-brands fa-html5 fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)"></i></div>&ndash;&gt;-->
-<!--&lt;!&ndash;            <div><i class="fa-brands fa-css fa-beat fa-5x " style="color: rgba(221, 196, 255, 0.79)"></i></div>&ndash;&gt;-->
-<!--&lt;!&ndash;            <div><i class="fa-solid fa-database fa-beat fa-5x" style="color: rgba(221, 196, 255, 0.79)" ></i></div>&ndash;&gt;-->
-<!--        </div>-->
+
         <div class="icon-skill">
-            <p class="skill-text">Programming Languages</p>
-            <i class="fa-brands fa-java fa-3x" style="color: #e0e1ed;"></i>
-            <i class="fa-brands fa-python fa-3x" style="color: #e0e1ed;"></i>
+            <p class="skill-text">Programming Languages :</p>
+           <div><i class="fa-brands fa-java fa-3x" style="color: #e0e1ed;"></i></div>
+            <div><i class="fa-brands fa-python fa-3x" style="color: #e0e1ed;"></i></div>
         </div>
         <div  class="icon-skill">
-            <p class="skill-text">Web Development</p>
-            <i class="fa-brands fa-js fa-3x" style="color: #e0e1ed;"></i>
-            <i class="fa-brands fa-html5 fa-3x" style="color: #e0e1ed;"></i>
-            <i class="fa-brands fa-css fa-3x" style="color:  #e0e1ed;"></i>
-            <i class="fa-brands fa-bootstrap fa-3x" style="color: #e0e1ed;"></i>
+            <div><p class="skill-text">Web Development :</p></div>
+            <div><i class="fa-brands fa-js fa-3x" style="color: #e0e1ed;"></i></div>
+            <div><i class="fa-brands fa-html5 fa-3x" style="color: #e0e1ed;"></i></div>
+            <div><i class="fa-brands fa-css fa-3x" style="color:  #e0e1ed;"></i></div>
+            <div><i class="fa-brands fa-bootstrap fa-3x" style="color: #e0e1ed;"></i></div>
 
 
         </div>
-        <div>
-            <p class="skill-text">Design Tools</p>
-            <i class="fa-brands fa-figma fa-3x" style="color:#e0e1ed;"></i>
+        <div class="icon-skill">
+            <p class="skill-text">Design Tools :</p>
+            <div><i class="fa-brands fa-figma fa-3x" style="color:#e0e1ed;"></i></div>
         </div>
     </div>
 
@@ -827,7 +837,7 @@
     <div>
         <p class="skill-title">Other</p>
         <div  class="icon-skill">
-            <i class="fa-solid fa-database fa-3x" style="color: #B197FC;"></i>
+            <div><i class="fa-solid fa-database fa-3x" style="color: #B197FC;"></i></div>
         </div>
     </div>
 
