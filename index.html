@@ -701,101 +701,101 @@
         }
         @media all and (max-width: 700px) {
             .hero-section {
-                display: flex; /* Use flexbox for layout adjustment */
-                flex-direction: column; /* Stack items vertically */
-                align-items: center; /* Center align items */
-                text-align: center; /* Center text content */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
             }
 
             #img_border1 {
-                order: 1; /* Moves the image to the top */
-                position: relative; /* Allows stacking */
-                margin: 0 auto; /* Centers the image */
-                width: 200px; /* Adjusted for mobile */
+                order: 1;
+                position: relative;
+                margin: 0 auto;
+                width: 200px;
                 height: 200px;
-                border: 10px solid transparent; /* Adjust border size */
-                top: 0; /* Resets positioning */
+                border: 10px solid transparent;
+                top: 0;
                 right: 0;
             }
 
             #img1 {
-                width: 180px; /* Adjusts to fit within the container */
+                width: 180px;
                 height: 180px;
             }
 
             #intro1 {
-                order: 2; /* Moves the text and buttons below the image */
-                padding: 20px; /* Adds spacing */
+                order: 2;
+                padding: 20px;
                 margin-top: 20px;
             }
 
             #intro {
-                font-size: 30px; /* Scales down for mobile */
+                font-size: 30px;
                 padding-left: 0;
             }
 
             #intro-para {
-                font-size: 16px; /* Adjusts for readability */
+                font-size: 16px;
                 padding-left: 0;
             }
 
             button {
-                position: static; /* Changes positioning for stacking */
-                margin: 10px auto; /* Centers and adds spacing */
-                display: block; /* Stacks buttons vertically */
+                position: static;
+                margin: 10px auto;
+                display: block;
                 width: 180px;
                 height: 40px;
             }    button {
                      position: static;
-                     margin: 10px 5px; /* Adds spacing between buttons */
-                     display: inline-block; /* Ensures buttons are inline */
-                     width: 120px; /* Scales down for mobile */
+                     margin: 10px 5px;
+                     display: inline-block;
+                     width: 120px;
                      height: 35px;
-                     font-size: 14px; /* Adjusts font size */
+                     font-size: 14px;
                  }
 
-            /* Wrap buttons in a flex container for alignment */
+
             .button-container {
-                display: flex; /* Arrange buttons side by side */
-                justify-content: center; /* Center-align the buttons */
-                gap: 10px; /* Space between buttons */
-                width: 100%; /* Ensure proper spacing */
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                width: 100%;
             }
 
 
             .icon-bar {
-                margin: 20px auto; /* Centers icons and adds spacing */
+                margin: 20px auto;
                 gap: 15px;
                 justify-content: center;
             }
         }
 
         @media all and (max-width: 700px) {
-            /* Completely hide the second div (image and social icons) */
+
             #img_border2 {
-                display: none !important; /* Ensure it's completely hidden */
+                display: none !important;
             }
 
-            /* Center the form div */
+
             #contact-section {
                 display: flex;
-                justify-content: center; /* Center horizontally */
-                align-items: center; /* Center vertically */
-                min-height: 100vh; /* Full screen height */
-                padding: 20px; /* Add spacing around the content */
-                background-color: #1f0346; /* Match the theme */
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                padding: 20px;
+                background-color: #1f0346;
             }
 
             #contact-section > div {
                 display: flex;
-                flex-direction: column; /* Stack the form vertically */
-                justify-content: center; /* Center content vertically */
-                align-items: center; /* Center content horizontally */
-                width: 100%; /* Full width for the container */
-                max-width: 400px; /* Limit width to make it mobile-friendly */
-                background-color: #1f0346; /* Match the theme */
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better appearance */
-                border-radius: 10px; /* Rounds the corners of the form */
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                max-width: 400px;
+                background-color: #1f0346;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
                 padding: 20px;
             }
 
@@ -807,39 +807,39 @@
 
 
         @media (max-width: 700px) {
-            /* Make the section layout single-column */
+
             .projects-section {
                 display: flex;
                 flex-direction: column;
-                align-items: center; /* Center align the cards */
-                padding: 10px; /* Adjust padding for better fit */
-                gap: 20px; /* Space between the cards */
+                align-items: center;
+                padding: 10px;
+                gap: 20px;
             }
 
             @media (max-width: 768px) {
-                /* Hide overflow to focus on one card at a time */
+
                 .projects-section {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    overflow: hidden; /* Ensure cards don't spill outside */
+                    overflow: hidden;
                     position: relative;
-                    height: 300px; /* Adjust based on card height */
+                    height: 300px;
                 }
 
-                /* Style all service cards */
+
                 .projects-section > div {
                     width: 90%;
                     max-width: 350px;
                     height: auto;
                     padding: 20px;
                     margin: 0 auto;
-                    opacity: 0; /* Initially hidden */
-                    position: absolute; /* Stack all cards on top of each other */
-                    animation: fadeInOut 12s infinite ease-out; /* Infinite animation */
+                    opacity: 0;
+                    position: absolute;
+                    animation: fadeInOut 12s infinite ease-out;
                 }
 
-                /* Assign animation delays for each card */
+
                 .projects-section > div:nth-child(1) {
                     animation-delay: 0s;
                 }
@@ -865,23 +865,23 @@
                 }
             }
 
-            /* Keyframes for fade-in-out effect */
+
             @keyframes fadeInOut {
                 0% {
                     opacity: 0;
-                    transform: translateY(20px); /* Slight offset for entrance effect */
+                    transform: translateY(20px);
                 }
                 10% {
                     opacity: 1;
-                    transform: translateY(0); /* Fully visible */
+                    transform: translateY(0);
                 }
                 40% {
                     opacity: 1;
-                    transform: translateY(0); /* Stay visible */
+                    transform: translateY(0);
                 }
                 50% {
                     opacity: 0;
-                    transform: translateY(-20px); /* Exit upwards */
+                    transform: translateY(-20px);
                 }
                 100% {
                     opacity: 0;
@@ -891,7 +891,7 @@
 
         @media (max-width: 768px) {
             .assignments-section {
-                grid-template-columns: 1fr; /* Single column layout */
+                grid-template-columns: 1fr;
             }
 
             .assignments-section > div {
@@ -910,6 +910,33 @@
                 display: none;
             }
 
+        }
+
+        @media (max-width: 768px) {
+            .skills-section {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+
+            .skills-section > div {
+                width: 100%;
+                padding: 0;
+            }
+
+            .icon-skill {
+                justify-content: flex-start;
+                flex-wrap: nowrap;
+                gap: 10px;
+            }
+
+            .img-skill {
+                width: 50px;
+                height: 50px;
+            }
+
+            .skill-text {
+                font-size: 18px;
+            }
         }
 
 
@@ -1146,6 +1173,7 @@
     <p id="footer-text">All Right Reserved @SaFer/copyright@SaFer2025</p>
 </div>
 </section>
+
 
 <script>
     const roles = ["Software Developer", "Front-end Developer", "UI/UX Designer"];
