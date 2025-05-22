@@ -418,6 +418,8 @@
             background-color: rgb(56, 6, 110);
 
         }
+
+
         #skills-header{
             background: linear-gradient(135deg, #1f0346, #6a11cb);
         }
@@ -887,6 +889,28 @@
             }
         }
 
+        @media (max-width: 768px) {
+            .assignments-section {
+                grid-template-columns: 1fr; /* Single column layout */
+            }
+
+            .assignments-section > div {
+                 width: 315px;
+                height: 200px;
+                margin: 0 auto;
+            }
+
+            .assigment-img{
+                height: 200px;
+                width: 315px;
+                border-radius: 20px;
+            }
+
+            .assignmentspara{
+                display: none;
+            }
+
+        }
 
 
 
