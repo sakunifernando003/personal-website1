@@ -768,6 +768,127 @@
             }
         }
 
+        @media all and (max-width: 700px) {
+            /* Completely hide the second div (image and social icons) */
+            #img_border2 {
+                display: none !important; /* Ensure it's completely hidden */
+            }
+
+            /* Center the form div */
+            #contact-section {
+                display: flex;
+                justify-content: center; /* Center horizontally */
+                align-items: center; /* Center vertically */
+                min-height: 100vh; /* Full screen height */
+                padding: 20px; /* Add spacing around the content */
+                background-color: #1f0346; /* Match the theme */
+            }
+
+            #contact-section > div {
+                display: flex;
+                flex-direction: column; /* Stack the form vertically */
+                justify-content: center; /* Center content vertically */
+                align-items: center; /* Center content horizontally */
+                width: 100%; /* Full width for the container */
+                max-width: 400px; /* Limit width to make it mobile-friendly */
+                background-color: #1f0346; /* Match the theme */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better appearance */
+                border-radius: 10px; /* Rounds the corners of the form */
+                padding: 20px;
+            }
+
+            #contact-btn{
+                margin-left: 60px;
+                margin-top: 40px;
+            }
+        }
+
+
+        @media (max-width: 700px) {
+            /* Make the section layout single-column */
+            .projects-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center; /* Center align the cards */
+                padding: 10px; /* Adjust padding for better fit */
+                gap: 20px; /* Space between the cards */
+            }
+
+            @media (max-width: 768px) {
+                /* Hide overflow to focus on one card at a time */
+                .projects-section {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    overflow: hidden; /* Ensure cards don't spill outside */
+                    position: relative;
+                    height: 300px; /* Adjust based on card height */
+                }
+
+                /* Style all service cards */
+                .projects-section > div {
+                    width: 90%;
+                    max-width: 350px;
+                    height: auto;
+                    padding: 20px;
+                    margin: 0 auto;
+                    opacity: 0; /* Initially hidden */
+                    position: absolute; /* Stack all cards on top of each other */
+                    animation: fadeInOut 12s infinite ease-out; /* Infinite animation */
+                }
+
+                /* Assign animation delays for each card */
+                .projects-section > div:nth-child(1) {
+                    animation-delay: 0s;
+                }
+
+                .projects-section > div:nth-child(2) {
+                    animation-delay: 3s;
+                }
+
+                .projects-section > div:nth-child(3) {
+                    animation-delay: 7s;
+                }
+
+                .projects-section > div:nth-child(4) {
+                    animation-delay: 11s;
+                }
+
+                .projects-section > div:nth-child(5) {
+                    animation-delay: 15s;
+                }
+
+                .projects-section > div:nth-child(6) {
+                    animation-delay: 18s;
+                }
+            }
+
+            /* Keyframes for fade-in-out effect */
+            @keyframes fadeInOut {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px); /* Slight offset for entrance effect */
+                }
+                10% {
+                    opacity: 1;
+                    transform: translateY(0); /* Fully visible */
+                }
+                40% {
+                    opacity: 1;
+                    transform: translateY(0); /* Stay visible */
+                }
+                50% {
+                    opacity: 0;
+                    transform: translateY(-20px); /* Exit upwards */
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+
+
+
 
 
     </style>
