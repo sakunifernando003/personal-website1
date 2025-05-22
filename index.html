@@ -650,7 +650,7 @@
             }
         }
 
-        @media all and (max-width:700px ) and (min-width: 400px){
+        @media all and (max-width:700px ) {
             .logo{
                 display: none;
             }
@@ -697,6 +697,78 @@
             }
 
         }
+        @media all and (max-width: 700px) {
+            .hero-section {
+                display: flex; /* Use flexbox for layout adjustment */
+                flex-direction: column; /* Stack items vertically */
+                align-items: center; /* Center align items */
+                text-align: center; /* Center text content */
+            }
+
+            #img_border1 {
+                order: 1; /* Moves the image to the top */
+                position: relative; /* Allows stacking */
+                margin: 0 auto; /* Centers the image */
+                width: 200px; /* Adjusted for mobile */
+                height: 200px;
+                border: 10px solid transparent; /* Adjust border size */
+                top: 0; /* Resets positioning */
+                right: 0;
+            }
+
+            #img1 {
+                width: 180px; /* Adjusts to fit within the container */
+                height: 180px;
+            }
+
+            #intro1 {
+                order: 2; /* Moves the text and buttons below the image */
+                padding: 20px; /* Adds spacing */
+                margin-top: 20px;
+            }
+
+            #intro {
+                font-size: 30px; /* Scales down for mobile */
+                padding-left: 0;
+            }
+
+            #intro-para {
+                font-size: 16px; /* Adjusts for readability */
+                padding-left: 0;
+            }
+
+            button {
+                position: static; /* Changes positioning for stacking */
+                margin: 10px auto; /* Centers and adds spacing */
+                display: block; /* Stacks buttons vertically */
+                width: 180px;
+                height: 40px;
+            }    button {
+                     position: static;
+                     margin: 10px 5px; /* Adds spacing between buttons */
+                     display: inline-block; /* Ensures buttons are inline */
+                     width: 120px; /* Scales down for mobile */
+                     height: 35px;
+                     font-size: 14px; /* Adjusts font size */
+                 }
+
+            /* Wrap buttons in a flex container for alignment */
+            .button-container {
+                display: flex; /* Arrange buttons side by side */
+                justify-content: center; /* Center-align the buttons */
+                gap: 10px; /* Space between buttons */
+                width: 100%; /* Ensure proper spacing */
+            }
+
+
+            .icon-bar {
+                margin: 20px auto; /* Centers icons and adds spacing */
+                gap: 15px;
+                justify-content: center;
+            }
+        }
+
+
 
     </style>
 </head>
